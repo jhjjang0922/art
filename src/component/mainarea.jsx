@@ -1,33 +1,32 @@
 import React from "react";
-import styled from "styled-components";
+import styles from "./Mainimg.module.css";
+import areaStyles from "./mainarea.module.css";
+import styled from 'styled-components';
 
-// 스타일 정의
-const MainImg = styled.div`
-  position: relative;
-  width: 100%;
-  height: 840px;
-  background: url("/public/images/mainimg.jpg") no-repeat center center;
-  background-size: cover;
-`;
+import Display from "./DisplayItem";
+import Education from "./EducationItem";
+import Collection from "./CollectionItem";
+import Ontact from "./OntactItem";
 
-const MainText = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  font-size: 48px;
-  font-weight: bold;
-`;
 
 function Mainarea() {
   return (
-    <MainImg>
-      <MainText>
-        젊은 시각 새로운 시선 2025
-        <br />
-      </MainText>
-    </MainImg>
+    <div className={areaStyles.Wrap}>
+      <div className={styles.main_img}>
+        <div className={styles.main_text}>
+          젊은 시각 새로운 시선 2025
+        </div>
+        <div className={styles.sub_text}>
+          2025-04-10 - 2025-07-06
+        </div>
+      </div>
+
+      <Display />
+      <Education/>
+      <Collection/>
+      <Ontact/>
+    </div>
+
   );
 }
 

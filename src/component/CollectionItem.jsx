@@ -6,6 +6,7 @@ const ItemBox = styled.div`
   flex: 1 1 calc(25% - 20px);
 `;
 
+
 function Collection() {
     const data = UsedataState()[2];
     return (
@@ -19,7 +20,8 @@ function Collection() {
                 </ItemBox>
             ))}
         </div>
-    )
+    );
 }
+
 
 export default Collection;

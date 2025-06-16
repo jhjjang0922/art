@@ -23,17 +23,18 @@ function App() {
             <h1 className='logo'><Link to="/"><img src={Logoimg} /></Link></h1>
             <nav className='nav'>
               <ul>
-                <li><Link to="/component/view">관람</Link></li>
-                <li><Link to="/component/display">전시</Link></li>
-                <li><Link to="/component/education">교육/행사</Link></li>
-                <li><Link to="/component/collection">수집/연구/출판</Link></li>
-                <li><Link to="/component/ontact">온택트</Link></li>
+                <li><Link to="/component/view" style={{ textDecoration: "none" }}>관람</Link></li>
+                <li><Link to="/component/display" style={{ textDecoration: "none" }}>전시</Link></li>
+                <li><Link to="/component/education" style={{ textDecoration: "none" }}>교육/행사</Link></li>
+                <li><Link to="/component/collection" style={{ textDecoration: "none" }}>수집/연구/출판</Link></li>
+                <li><Link to="/component/ontact" style={{ textDecoration: "none" }}>온택트</Link></li>
               </ul>
             </nav>
             <ul className='q_mn'>
               <span className="lang">KR | EN</span>
               <IoSearch className="icon" />
-              <span className="auth"><Link to="#">회원가입</Link> | <Link to="#">로그인</Link></span>
+              <span className="auth"><Link to="#" style={{ textDecoration: "none" }}>회원가입</Link> | 
+              <Link to="#" style={{ textDecoration: "none" }}>로그인</Link></span>
             </ul>
           </div>
         </header>

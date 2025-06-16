@@ -41,6 +41,7 @@ html {
 .header .nav {}
 
 .header .nav>ul {
+    list-style: none;
     width: 500px;
     height: 100px;
     display: flex;

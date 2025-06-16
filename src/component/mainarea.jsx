@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Mainimg.module.css";
 import areaStyles from "./mainarea.module.css";
-import styled from 'styled-components';
 
 import Display from "./DisplayItem";
 import Education from "./EducationItem";

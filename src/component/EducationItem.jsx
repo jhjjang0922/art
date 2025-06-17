@@ -12,19 +12,53 @@ const EducationWrapper = styled.section`
 `;
 
 const Title = styled.h1`
-  
+  font-size:46px;
+  font-weight: bold;
+  margin-bottom: 10px;
 `;
 
 const Menu = styled.div`
-  
+  font-size:16px;
+  margin-bottom:20px;
+  display:flex;
+  gap:20px;
+  span {
+    position: relative;
+    padding: 0 8px;
+
+    /* 마지막 span에는 선을 붙이지 않음 */
+    &:not(:last-child)::after {
+      content: "|";
+      position: absolute;
+      right: -10px;
+      color: #999;
+    }
+  }
 `;
 
 const CardGrid = styled.div`
-  
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: 40px;
 `;
 
 const ItemBox = styled.div`
-  
+  width: 250px;
+  text-align: center;
+  img{
+    width:100%;
+    height:auto;
+  }
+  h3{
+    font-size:16px;
+    font-weight:bold;
+    margin:12px 0px -5px;
+  }
+  p{
+    font-size:14px;
+    color:#888;
+  }
 `;
 
 function Education() {

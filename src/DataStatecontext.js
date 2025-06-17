@@ -36,7 +36,7 @@ const Data = [
         {
             id: 5,
             category: '시민교육',
-            ttl2: '2025 상반기 부산시립미술관 리노베이션<br />연계 창의 교육프로그램',
+            ttl2: '2025 상반기 부산시립미술관 <br />리노베이션<br />연계 창의 교육프로그램',
             day2: '2025-05-12 - 2025-05-30',
             src: process.env.PUBLIC_URL + '/images/mainarea/05.png'
         },

@@ -2,29 +2,83 @@ import React from "react";
 import styled from "styled-components";
 import { UsedataState } from "../DataStatecontext";
 
-const ItemBox = styled.div`
-  flex: 1 1 calc(25% - 20px);
+const Wrapper = styled.div`
+  margin-top: 40px;
+  margin-left:15px
 `;
 
-const PlayButton = styled.button`
-  background: none;
-  border: none;
-  font-size: 24px;
-  margin-top: 10px;
+const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+`;
+
+const Title = styled.h2`
+  font-size: 28px;
+  font-weight: bold;
+`;
+
+const More = styled.span`
+  font-size: 16px;
+  color: #333;
   cursor: pointer;
 `;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 60px;
+`;
+
+const ItemBox = styled.div`
+  display: flex;
+  align-items: center;
+
+  .thumbnail-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  p {
+    max-width: 160px;
+    font-size: 17px;
+    margin-left:-150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`;
+
 function Ontact() {
   const data = UsedataState()[3];
+
   return (
-    <div>
-      {data.map((item) => (
-        <ItemBox>
-          <img src={item.src} />
-          <p>{item.ttl4}</p>
-          <PlayButton>▶</PlayButton>
-        </ItemBox>
-      ))}
-    </div>
+    <Wrapper>
+      <Header>
+        <Title>온택트 BMA</Title>
+        <More>더보기</More>
+      </Header>
+
+      <Grid>
+        {data.map((item, idx) => (
+          <ItemBox key={idx}>
+            <div className="thumbnail-wrapper">
+              <img src={item.src} alt={item.ttl4} />
+            </div>
+            <p>{item.ttl4}</p>
+          </ItemBox>
+        ))}
+      </Grid>
+    </Wrapper>
   );
 }
 

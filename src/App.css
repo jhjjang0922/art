@@ -64,3 +64,16 @@ html {
     background: url(../public/images/mainimg.jpg) no-repeat center center;
     background-size: cover;
 }
+.black-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.black-link:hover {
+    color: #007acc;
+}
+
+.black-link:active {
+    color: #005599;
+}

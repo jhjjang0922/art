@@ -26,7 +26,6 @@ const Menu = styled.div`
     position: relative;
     padding: 0 8px;
 
-    /* 마지막 span에는 선을 붙이지 않음 */
     &:not(:last-child)::after {
       content: "|";
       position: absolute;

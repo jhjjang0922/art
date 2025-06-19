@@ -8,6 +8,7 @@ import Display from "./DisplayItem";
 import Education from "./EducationItem";
 import Collection from "./CollectionItem";
 import Ontact from "./OntactItem";
+import Footer from "./Footer";
 
 const Main_bottom = styled.div`
   width: 100%;
@@ -79,7 +80,7 @@ function Mainarea() {
         </LeftGroup>
         <More>더보기</More>
       </Main_bottom>
-
+      <Footer />
     </div>
 
   );

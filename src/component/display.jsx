@@ -1,13 +1,13 @@
 import React from "react";
 import { UsedataState } from "../DataStatecontext";
-
+import DisplayTopBar from "./DisplayTopBar";
 
 function Display() {
 
     const data = UsedataState()[0];
     return (
         <div>
-            <h2>Display</h2>
+            <DisplayTopBar />
             {data.map(item => (
                 <div key={item.id}>
                     <img src={item.src} />

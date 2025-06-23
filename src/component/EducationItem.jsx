@@ -4,12 +4,15 @@ import { UsedataState } from "../DataStatecontext";
 
 const EducationWrapper = styled.section`
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 60px 20px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+
 
 const Title = styled.h1`
   font-size:46px;

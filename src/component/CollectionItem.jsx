@@ -3,7 +3,10 @@ import styled from "styled-components";
 import { UsedataState } from "../DataStatecontext";
 
 const Wrapper = styled.div`
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
 `;
 
 const Header = styled.div`
@@ -38,7 +41,7 @@ const Container = styled.div`
 `;
 
 const ItemBox = styled.div`
-  width:300px;
+  width:250px;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;

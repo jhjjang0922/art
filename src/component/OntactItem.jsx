@@ -3,9 +3,12 @@ import styled from "styled-components";
 import { UsedataState } from "../DataStatecontext";
 
 const Wrapper = styled.div`
-  margin-top: 40px;
-  margin-left:15px
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
 `;
+
 
 const Header = styled.div`
   display: flex;

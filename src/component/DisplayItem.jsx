@@ -4,11 +4,12 @@ import { UsedataState } from "../DataStatecontext";
 
 const DisplayWrapper = styled.section`
   width: 100%;
-  height: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: #e7d3bb;
 `;
+
 
 const TopArea = styled.div`
   background-color:rgb(106, 50, 41);
